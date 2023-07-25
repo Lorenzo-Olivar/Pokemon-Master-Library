@@ -6,10 +6,16 @@
 .explicit{
     /*text-align to the right next to header*/
     text-align: right;
-    /*background color transparent*/
-    background-color: transparent;
-    /*border color transparent*/
-    border-color: transparent;
+}
+
+.explicit button{
+    background-color: rgba(0, 0, 0, 0.089);
+}
+
+.explicit h2{
+    /*text color red*/
+    font-size: 1.5vw;
+    color: rgb(38, 228, 0);
 }
 
 .wrapper{
