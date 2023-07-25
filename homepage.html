@@ -4,14 +4,12 @@
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
-    />
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Pokemon Master Library</title>
-    <link rel="stylesheet" href="./assets/reset.css" />
-    <link rel="stylesheet" href="./assets/stylesheet.css" />
+    <link rel="stylesheet" href="homepage.css" />
     <style>
-      body {
+      body{
         background-image: url(./images/pokeapoke.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -28,23 +26,37 @@
         <div class="card-header">
           <h2>Search for a Pokemon</h2>
         </div>
-        <div class="card-body">
+        <div class="card-form">
           <form id="search-form">
             <input
               type="text"
               id="search-input"
-              placeholder="Enter a Pokemon's name or number"
+              placeholder="Enter a Pokemon's name here"
               aria-label="Pokemon Search"
             />
-           <button id="search-button" class="btn">Search</button>
+           <button id="search-button" class="btn"><h3>Search</h3></button>
           </form>
         </div>
         <div class="card-footer">
-          <button id="random-button" class="btn">Random Pokemon</button>
+          <button id="pokemon-names" class="btn"><h2>Pokemon List</h2></button>
         </div>
       </div>
     </div>
-    <div class="wrapper">
+    <img src="./images/pokemonchart2.png" alt="pokechart" id="pokechart"/>
+    <div id="info">
+      <h2>information intro</h2>
+      <aside class="para">
+          <p>Weclome to Pokemon Master Library! This is a pokedex that you can use anywhere or anytime!</p>
+          <p>Search for a pokemon by name and you will be able to see the pokemon's information and description.</p>
+          <p>Click on the Pokemon List button to see a list of all the pokemon.</p>
+          <br>
+          <div id="warning">
+            <p>Warning!! Some pokemon give explict advise so think twice before asking for their wisdom...</p>
+          </div>    
+      </aside>
+    </div>
+    
+    <!--<div class="wrapper">
       <div class="card">
         <div class="card-header">
           <h2>Pokemon Information</h2>
@@ -74,7 +86,7 @@
         </div>
 
       </div>
-    </div>
+    </div>-->
     <script src="./homepage.js"></script>
     </body>
 </html>
