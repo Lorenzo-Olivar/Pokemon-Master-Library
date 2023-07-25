@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="pokepage.css" />
     <style>
         body {
           background-image: url(./images/pokestadium.png);
@@ -14,18 +15,25 @@
       </style>
 </head>
 
+<header class="head">
+    <h1>Pokemon Battle info</h1>
+</header>
+
+<div class="explicit">
+    <button id="advise" class="random"><h2>Ask for explicit advise</h2></button>
+</div>
 
 <body>
     <!-- pokemon picture and name block -->
-    <div class="wrapper">
-        <div class="card">
-            <div class="card-header">
+    <div class="whole">
+        <div class="wrapper">
+            <div id="pokemon">
                 <h2>Pokemon Information</h2>
             </div>
             <div class="card-body">
                 <div id="pokemon-info">
-                    <div id="pokemon-image"></div>
                     <div id="pokemon-name"></div>
+                    <div id="pokemon-image"></div>
                     <div id="pokemon-number"></div>
                 </div>
             </div>
@@ -43,10 +51,41 @@
                 <div id="pokemon-moves"></div>
             </div>
         </div>
+        <!-- advise text block 1-->
+        <div class="card">
+            <div class="container">
+                <h3>Pokemon's inner thought</h3>
+            </div>
+            <div class="random">
+                <div id="advise-1"></div>
+                <ul id="ad"></ul>
+            </div>
+        </div>
 
+        <!-- advise text block 2-->
+        <div class="card">
+            <div class="container">
+                <h4>Worker Jane</h4>
+            </div>
+            <div class="random">
+                <div id="advise-2"></div>
+                <ul id="ad"></ul>
+            </div>
+        </div>
 
+        <!-- advise text block 3-->
+        <div class="card">
+            <div class="container">
+                <h5>Team Rocket Grunt</h5>
+            </div>
+            <div class="random">
+                <div id="advise-3"></div>
+                <ul id="ad"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="pokepage.js"></script> 
 </body>
 
-    
-</body>
 </html>
