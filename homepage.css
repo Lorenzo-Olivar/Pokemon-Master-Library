@@ -54,6 +54,7 @@ header{
     /*make search bar wider and taller*/
     width: 95%;
     height: 35px;
+    margin: -2.5px;
     /*centering the search bar*/
     display: block;
     margin-left: auto;
