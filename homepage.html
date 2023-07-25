@@ -8,6 +8,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Pokemon Master Library</title>
     <link rel="stylesheet" href="homepage.css" />
+    <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+    <style>
+      @import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+      </style>
     <style>
       body{
         background-image: url(./images/pokeapoke.png);
@@ -19,8 +23,8 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <h1>Pokemon Master Library</h1>
+      <header id ="pokemon">
+        <h1>Pokémon Master Library</h1>
       </header>
       <div class="card">
         <div class="card-header">
@@ -34,7 +38,7 @@
               placeholder="Enter a Pokemon's name here"
               aria-label="Pokemon Search"
             />
-           <button id="search-button" class="btn"><h3>Search</h3></button>
+            <button id="search-button"><a href="pokepage.html">Search</a></button>
           </form>
         </div>
         <div class="card-footer">
