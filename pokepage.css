@@ -1,0 +1,30 @@
+.head{
+    text-align: center;
+    color:red;
+}
+
+.explicit{
+    /*text-align to the right next to header*/
+    text-align: right;
+    /*background color transparent*/
+    background-color: transparent;
+    /*border color transparent*/
+    border-color: transparent;
+}
+
+.wrapper{
+    position: relative;
+}
+
+#pokemon{
+    text-align: center;
+}
+
+.card-header{
+    text-align: center;
+    color: red;
+   text-align: center;
+   /*move down to lower screen*/
+    margin-top: 350px;
+
+}
