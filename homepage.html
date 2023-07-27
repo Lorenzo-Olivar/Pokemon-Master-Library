@@ -52,14 +52,54 @@
       </header>
       
       <div class="card-form">
-          <form id="search-form">
-              <input type="text" id="pokemonName" placeholder="Enter Pokémon name or ID"  aria-label="Pokemon Search">
-              <button id="search-button" onclick="getPokemonData()">>Search</button>
-          </form>
+          <div id="search-form">
+               <input type="text" id="pokemonName" placeholder="Enter Pokémon name or ID"  aria-label="Pokemon Search"> 
+              <button id="search-button" onclick="getPokemonData()">Search</button>
+         </div>
       </div>
     <div id="pokemonInfo">
        <!--pokemon display-->
     </div>
+    <script>
+      function getPokemonData() {
+        const pokemonName = document.getElementById('pokemonName').value.toLowerCase();
+        const apiUrl = `https://pokeapi.co/api/v2/pokemon/${pokemonName}`;
+  
+        fetch(apiUrl)
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('Pokémon not found!');
+            }
+            return response.json();
+          })
+          .then(data => {
+            displayPokemonData(data);
+          })
+          .catch(error => {
+            console.error('Error fetching data:', error);
+            document.getElementById('pokemonInfo').innerHTML = 'Pokémon not found!';
+          });
+      }
+  
+      function displayPokemonData(data) {
+        const pokemonInfoDiv = document.getElementById('pokemonInfo');
+        const pokemonName = data.name.toUpperCase();
+        const pokemonID = data.id;
+        const pokemonTypes = data.types.map(type => type.type.name).join(', ');
+        const pokemonAbility = data.abilities[0].ability.name;
+        const pokemonPictureUrl = data.sprites.front_default;
+  
+        const infoHTML = `
+          <h2>${pokemonName}</h2>
+          <p>ID: ${pokemonID}</p>
+          <p>Type: ${pokemonTypes}</p>
+          <p>Ability: ${pokemonAbility}</p>
+          <img src="${pokemonPictureUrl}" alt="${pokemonName} Picture">
+        `;
+  
+        pokemonInfoDiv.innerHTML = infoHTML;
+      }
+    </script>
     <script>
       
       document.addEventListener('DOMContentLoaded', () => {
@@ -97,7 +137,7 @@
         </script>
   
     
-  -->
+  
         
           
            
@@ -107,9 +147,9 @@
         
          
     <img src="./images/pokemonchart2.png" alt="pokechart" id="pokechart"/>
-    <!-- removed info from here -->
+    <!-- 
     
-    <!--<div class="wrapper">
+    <div class="wrapper">
       <div class="card">
         <div class="card-header">
           <h2>Pokemon Information</h2>
