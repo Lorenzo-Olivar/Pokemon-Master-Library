@@ -7,13 +7,16 @@
       content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Pokemon Master Library</title>
+    <!--this is new-->
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.3/css/bulma.min.css">
+    <!--end of new-->
     <link rel="stylesheet" href="homepage.css" />
     <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
     <style>
       @import url('https://fonts.cdnfonts.com/css/pokemon-solid');
       </style>
     <style>
-      body{
+      html{
         background-image: url(./images/pokeapoke.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -25,24 +28,12 @@
     <div class="wrapper">
       <header id ="pokemon">
         <h1>Pokémon Master Library</h1>
-      </header>
-        <div class="card-form">
-          <form id="search-form">
-            <input
-              type="text"
-              id="search-input"
-              placeholder="Enter a Pokemon's name here"
-              aria-label="Pokemon Search"
-            />
-            <button id="search-button"><a href="pokepage.html">Search</a></button>
-          </form>
-        </div>
-        <div class="card-footer">
-          <button id="pokemon-names" class="btn"><h2>Pokemon List</h2></button>
-        </div>
-      </div>
-    </div>
-    <img src="./images/pokemonchart2.png" alt="pokechart" id="pokechart"/>
+        <!--this is new-->
+        <h2>Pokédex</h2>
+    <select id="pokemonDropdown">
+      <option id="pokemon-names" value="" disabled selected>Pokémon Names</option>
+    </select>
+<!-- info moved here -->
     <div id="info">
       <h2>information intro</h2>
       <aside class="para">
@@ -55,6 +46,68 @@
           </div>    
       </aside>
     </div>
+ 
+    
+        <!--end of new-->
+      </header>
+      
+      <div class="card-form">
+          <form id="search-form">
+              <input type="text" id="pokemonName" placeholder="Enter Pokémon name or ID"  aria-label="Pokemon Search">
+              <button id="search-button" onclick="getPokemonData()">>Search</button>
+          </form>
+      </div>
+    <div id="pokemonInfo">
+       <!--pokemon display-->
+    </div>
+    <script>
+      
+      document.addEventListener('DOMContentLoaded', () => {
+        const apiUrl = 'https://pokeapi.co/api/v2/pokemon?limit=151'; // Limiting to the first 151 Pokémon
+    
+        // Fetch the list of Pokémon names from the PokeAPI
+        fetch(apiUrl)
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('Failed to fetch Pokémon data.');
+            }
+            return response.json();
+          })
+          .then(data => {
+            const pokemonDropdown = document.getElementById('pokemonDropdown');
+    
+            // Create an option element for each Pokémon name and add it to the dropdown
+            data.results.forEach(pokemon => {
+              const option = document.createElement('option');
+              option.textContent = capitalizeFirstLetter(pokemon.name);
+              option.value = pokemon.name;
+              pokemonDropdown.appendChild(option);
+            });
+          })
+          .catch(error => {
+            console.error('Error:', error);
+            alert('Failed to fetch Pokémon data.');
+          });
+    
+        // Helper function to capitalize the first letter of a string
+        function capitalizeFirstLetter(string) {
+          return string.charAt(0).toUpperCase() + string.slice(1);
+        }
+      });
+        </script>
+  
+    
+  -->
+        
+          
+           
+             
+            <!--<button id="search-button"><a href="pokepage.html">Search</a></button>-->
+        
+        
+         
+    <img src="./images/pokemonchart2.png" alt="pokechart" id="pokechart"/>
+    <!-- removed info from here -->
     
     <!--<div class="wrapper">
       <div class="card">
