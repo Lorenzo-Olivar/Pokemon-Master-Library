@@ -29,7 +29,7 @@
       <header id ="pokemon">
         <h1>Pokémon Master Library</h1>
         <!--this is new-->
-        <h2>Pokédex</h2>
+        <!-- <h2>Pokédex</h2> -->
     <select id="pokemonDropdown">
       <option id="pokemon-names" value="" disabled selected>Pokémon Names</option>
     </select>
@@ -42,7 +42,7 @@
           <p>Click on the Pokemon List button to see a list of all the pokemon.</p>
           <br>
           <div id="warning">
-            <p>Warning!! Some pokemon give explict advise so think twice before asking for their wisdom...</p>
+            <p>Warning!! Team Rocket is sneaking around and stealing pokemon! Think twice before asking for their wisdom...</p>
           </div>    
       </aside>
     </div>
@@ -60,7 +60,7 @@
     <div id="pokemonInfo">
        <!--pokemon display-->
     </div>
-    <script>
+    <!-- <script>
       function getPokemonData() {
         const pokemonName = document.getElementById('pokemonName').value.toLowerCase();
         const apiUrl = `https://pokeapi.co/api/v2/pokemon/${pokemonName}`;
@@ -134,16 +134,16 @@
           return string.charAt(0).toUpperCase() + string.slice(1);
         }
       });
-        </script>
+        </script> -->
   
     
   
         
           
            
-             
-            <!--<button id="search-button"><a href="pokepage.html">Search</a></button>-->
-        
+        <div class="team">
+            <button id="Rocket"><a href="pokepage.html"><h3>Prepare for trouble</h3></a></button>
+        </div>
         
          
     <img src="./images/pokemonchart2.png" alt="pokechart" id="pokechart"/>
