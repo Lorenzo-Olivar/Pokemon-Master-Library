@@ -16,42 +16,19 @@
       </style>
 </head>
 
-<header class="head">
-    <h1>Pokemon Battle info</h1>
-</header>
 
 <div class="explicit">
-    <button id="advise" class="random"><h2>Ask for explicit advise</h2></button>
+    <button id="getAdviceButton" id="advise" class="random"><h2>Ask for Team Rocket explicit advise</h2></button>
+</div>
+<div id="adviceDisplay"> 
 </div>
 
 <body>
     <!-- pokemon picture and name block -->
-    <div class="whole">
-        <div class="wrapper">
-            <div id="pokemon">
-                <h2>Pokemon Information</h2>
-            </div>
-            <div class="card-body">
-                <div id="pokemon-info">
-                    <div id="pokemon-name"></div>
-                    <div id="pokemon-image"></div>
-                    <div id="pokemon-number"></div>
-                </div>
-            </div>
-        </div>
+    
 
         <!-- pokemon description -->
-        <div class="card">
-            <div class="card-header">
-                <h2>Pokemon Description</h2>
-            </div>
-            <div class="card-body">
-                <div id="pokemon-description"></div>
-                <div id="pokemon-types"></div>
-                <div id="pokemon-abilities"></div>
-                <div id="pokemon-moves"></div>
-            </div>
-        </div>
+        
         <!-- advise text block 1-->
         <div class="card">
             <div class="container">
@@ -86,7 +63,7 @@
         </div>
     </div>
     <!--this is new-->
-    <script>
+    <!-- <script>
         function getPokemonData() {
           const pokemonName = document.getElementById('pokemonName').value.toLowerCase();
           const apiUrl = `https://pokeapi.co/api/v2/pokemon/${pokemonName}`;
@@ -125,7 +102,7 @@
     
           pokemonInfoDiv.innerHTML = infoHTML;
         }
-      </script>
+      </script> -->
     <script src="pokepage.js"></script> 
 </body>
 

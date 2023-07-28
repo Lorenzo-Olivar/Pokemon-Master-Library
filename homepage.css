@@ -145,7 +145,7 @@ header{
 }
 
 #warning{
-    color: red;
+   color: red !important;
 }
 
 #pokechart{
@@ -184,6 +184,10 @@ header{
     -webkit-text-fill-color: rgb(255, 203, 5);
 }
 
+#pokemon h1{
+    font-size: 70px;
+}
+
 #pokemonDropdown{
     /*move to top left of screen*/
     position: absolute;
@@ -213,8 +217,56 @@ header{
     /*centering the image*/
     display: block;
     margin-left: auto;
-    margin-right: auto;
+   /* margin-right: auto;*/
     margin-top: -500px;
     width: 500px;
     z-index: 1;
+}
+
+.team{
+    
+    /*move to bottom left of screen*/
+    position: absolute;
+    bottom: 0;
+    right: 305px;
+   
+    background-color:rgba(145, 0, 72, 0.5);
+    /*rounding the list button*/
+    
+    /*adding shadow*/
+    box-shadow: 0 0 8px  #4bc9c9;
+    text-align: center;
+}
+
+.team button{
+    background-color: rgba(0, 0, 0, 0.089);
+}
+
+.team h3{
+    /*text color red*/
+    font-size: 1.5vw;
+    color: rgb(197, 88, 252);
+}
+
+/* #Rocket{
+    visibility: hidden;
+}
+#Rocket:hover button{
+    visibility: visible;
+    transition: 0.5s;
+} */
+
+/*add media query for #pokemonInfo img*/
+@media only screen and (max-width: 1145px) {
+    #pokemonInfo img{
+        width: 300px;
+        margin-top: -50px;
+    }
+}
+
+/*add media query for #pokemon h1 */
+@media only screen and (max-width: 1500px) {
+    #pokemon h1{
+        font-size: 40px;
+    }
 }
