@@ -35,6 +35,7 @@
 //         console.error(error);
 //     });
 
+const pokemonDropdown = document.getElementById('pokemonDropdown');
 
       function getPokemonData() {
         const pokemonName = document.getElementById('pokemonName').value.toLowerCase();
@@ -75,7 +76,12 @@
         pokemonInfoDiv.innerHTML = infoHTML;
       }
     
-    
+    pokemonDropdown.addEventListener('change', () => {
+      var pokemonName = pokemonDropdown.value;
+      var  pokemonSearchbar = document.getElementById('pokemonName');
+      pokemonSearchbar.value = pokemonName;
+
+    });
       
       document.addEventListener('DOMContentLoaded', () => {
         const apiUrl = 'https://pokeapi.co/api/v2/pokemon?limit=151'; // Limiting to the first 151 Pokémon
@@ -90,6 +96,7 @@
           })
           .then(data => {
             const pokemonDropdown = document.getElementById('pokemonDropdown');
+
     
             // Create an option element for each Pokémon name and add it to the dropdown
             data.results.forEach(pokemon => {

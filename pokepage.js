@@ -2,8 +2,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const getAdviceButton = document.getElementById('getAdviceButton');
     const adviceDisplay = document.getElementById('adviceDisplay');
     // var insertTextBubbleEl = document.getElementById('insert-text-bubble')
+    const audioEl = document.getElementById('playAudio');
 
     getAdviceButton.addEventListener('click', () => {
+      audioEl.play();
       fetch('https://api.adviceslip.com/advice')
         .then(response => {
           if (!response.ok) {
@@ -29,3 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
       adviceDisplay.setAttribute('style', 'position: relative; max-width: 360px; text-align: center;');
     }
   });
+
+  
+
+    
