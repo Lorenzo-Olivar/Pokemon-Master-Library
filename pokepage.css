@@ -34,3 +34,26 @@
     margin-top: 350px;
 
 }
+
+/*James*/
+.james img{
+   left: 200px;
+   width: 100px;
+   right: 200px;
+   down: 200px;
+} 
+
+
+.jessie img{
+    float: right;
+    width: 150px;
+    padding: 130px; 
+   
+} 
+
+/*meowth*/
+.meowth img{
+    width: 450px ;
+    object-position: -60px;
+    padding: -70px;
+}
