@@ -57,3 +57,12 @@
     object-position: -60px;
     padding: -70px;
 }
+
+/* text bubble */
+
+#insert-text-bubble {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40vh;
+}
