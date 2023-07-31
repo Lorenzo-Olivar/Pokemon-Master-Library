@@ -84,7 +84,7 @@ const pokemonDropdown = document.getElementById('pokemonDropdown');
     });
       
       document.addEventListener('DOMContentLoaded', () => {
-        const apiUrl = 'https://pokeapi.co/api/v2/pokemon?limit=151'; // Limiting to the first 151 Pokémon
+        const apiUrl = 'https://pokeapi.co/api/v2/pokemon?limit=1010'; // Limiting to the first 151 Pokémon
     
         // Fetch the list of Pokémon names from the PokeAPI
         fetch(apiUrl)

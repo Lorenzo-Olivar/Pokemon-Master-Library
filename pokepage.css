@@ -3,6 +3,10 @@
     color:red;
 }
 
+body{
+    position: relative;
+}
+
 .explicit{
     /*text-align to the right next to header*/
     text-align: right;
@@ -15,7 +19,7 @@
 .explicit h2{
     /*text color red*/
     font-size: 1.5vw;
-    color: rgb(38, 228, 0);
+    color: rgb(196, 13, 156);
 }
 
 .wrapper{
@@ -65,4 +69,24 @@
     flex-direction: row;
     justify-content: center;
     margin-top: 40vh;
+}
+
+.Theme{
+    /*move to the left top corner next to header*/
+    text-align: left;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.Theme button{
+    background-color: rgba(0, 0, 0, 0.089);
+}
+
+.Theme h2{
+    /*text color red*/
+    font-size: 1.5vw;
+    color: rgb(196, 13, 156);
 }
