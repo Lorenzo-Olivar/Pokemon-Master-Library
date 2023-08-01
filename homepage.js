@@ -70,7 +70,7 @@ const pokemonDropdown = document.getElementById('pokemonDropdown');
           <p>ID: ${pokemonID}</p>
           <p>Type: ${pokemonTypes}</p>
           <p>Ability: ${pokemonAbility}</p>
-          <img src="${pokemonPictureUrl}" alt="${pokemonName} Picture">
+          <img src="${pokemonPictureUrl}" alt="${pokemonName} Picture" style="background-color:rgba(0, 0, 0, 0.582); border-radius: 50px;">
         `;
   
         pokemonInfoDiv.innerHTML = infoHTML;
