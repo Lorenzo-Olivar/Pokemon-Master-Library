@@ -16,6 +16,29 @@ Proceed to the webpage here | [Pokemon Master Library](https://lorenzo-olivar.gi
 
 ## Usage
 
+In the search bar, you can type the name of the Pokemon that you want to learn more about.
+
+![Screenshot of the search bar](./assets/screenshots/TYPESS1.png)
+
+When you click the search bar, the information of the Pokemon you searched for will pop up!
+
+![Screenshot of the search bar](./assets/screenshots/INFOSS2.png)
+
+If you don't know a name to search for, you use the Pokemon name dropdown to the left.
+
+![Screenshot of the search bar](./assets/screenshots/LISTSS3.png)
+
+We also provide additional information about our website located on the top right button.
+
+![Screenshot of the search bar](./assets/screenshots/DESCSS4.png)
+
+In the center of our landing page, we also provide an in-depth poke-type chart that displays the strengths and weaknesses of each type.
+
+![Screenshot of the search bar](./assets/screenshots/CHARTSS5.png)
+
+FOR A FUN EASTER EGG O.O PRESS THIS BUTTON!!!
+
+![Screenshot of the search bar](./assets/screenshots/PFTSS6.png)
 
 ## Credits
 
