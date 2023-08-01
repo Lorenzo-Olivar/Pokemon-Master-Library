@@ -206,10 +206,11 @@ header{
 
 #pokemonInfo{
     font-size: 80px !important;
-    color:rgba(145, 0, 72, 0.5);
+    color: rgb(255, 203, 5);
     /*make the text border black*/
     -webkit-text-stroke: 2px black;
     z-index: 100;
+    text-shadow: -2px 1px 20px black;
 
 }
 
@@ -228,7 +229,7 @@ header{
     /*move to bottom left of screen*/
     position: absolute;
     bottom: 0;
-    right: 305px;
+    right: 375px;
    
     background-color:rgba(145, 0, 72, 0.5);
     /*rounding the list button*/
@@ -245,7 +246,7 @@ header{
 .team h3{
     /*text color red*/
     font-size: 1.5vw;
-    color: rgb(197, 88, 252);
+    color: #4bc9c9;
 }
 
 /* #Rocket{
