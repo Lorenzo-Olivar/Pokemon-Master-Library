@@ -40,11 +40,11 @@ body{
 }
 
 /*James*/
-.james img{
-   left: 200px;
+/* .james img{ */
+   /* left: 200px;
    width: 100px;
    right: 200px;
-   down: 200px;
+
 } 
 
 
@@ -56,11 +56,11 @@ body{
 } 
 
 /*meowth*/
-.meowth img{
+/* .meowth img{
     width: 450px ;
     object-position: -60px;
     padding: -70px;
-}
+} */ */
 
 /* text bubble */
 

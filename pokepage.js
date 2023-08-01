@@ -3,11 +3,8 @@ const audioBtn = document.getElementById('audioBtn');
 document.addEventListener('DOMContentLoaded', () => {
     const getAdviceButton = document.getElementById('getAdviceButton');
     const adviceDisplay = document.getElementById('adviceDisplay');
-    // var insertTextBubbleEl = document.getElementById('insert-text-bubble')
-    // const audioEl = document.getElementById('playAudio');
 
     getAdviceButton.addEventListener('click', () => {
-      // audioEl.play();
       fetch('https://api.adviceslip.com/advice')
         .then(response => {
           if (!response.ok) {

@@ -249,14 +249,6 @@ header{
     color: #4bc9c9;
 }
 
-/* #Rocket{
-    visibility: hidden;
-}
-#Rocket:hover button{
-    visibility: visible;
-    transition: 0.5s;
-} */
-
 /*add media query for #pokemonInfo img*/
 @media only screen and (max-width: 1145px) {
     #pokemonInfo img{
